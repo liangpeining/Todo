@@ -6,7 +6,7 @@ var donelist = document.querySelector(".done .clist");
 var todoNumspan = document.querySelector(".todo h1 .num");
 var doneNumspan = document.querySelector(".done h1 .num");
 var main = document.querySelector(".main");
-var body = document.body;
+var body = document.querySelector('body');
 
 // 根据数据来渲染内容 ---》MVC模式
 // 定义一个全局数组，用来存放数据
@@ -107,7 +107,7 @@ inputDom.onkeypress = function (e) {
 // 如果 e.target.classNam == "delete" 则是触发了删除事件
 // 如果是 e.target.classNam == "checkbox" 则是发生勾选框事件
 
-main.addEventListener("click",function(e) {
+body.addEventListener("click",function(e) {
     // 事件对象e
     // 事件对象e.target.className保存了被点击的对象类名
     // 判断点击的是不是delete
